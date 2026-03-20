@@ -3,7 +3,15 @@ from pydantic import BaseModel
 import numpy as np
 import pickle
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Load model files
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
