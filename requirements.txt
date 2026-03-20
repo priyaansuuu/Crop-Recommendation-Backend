@@ -1,0 +1,11 @@
+numpy
+pandas
+geopandas
+shapely
+tqdm
+requests
+scikit-learn
+xgboost
+matplotlib
+fastapi
+uvicorn
